@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRM для магазина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: linear-gradient(135deg, red, blue); height: 100vh;">
+
+<div class="container">
+    <h1>Вход в систему</h1>
+    <form id="login-form">
+        <label for="username">Имя пользователя</label>
+        <input type="text" id="username" name="username" placeholder="Введите имя пользователя" required>
+
+        <label for="password">Пароль</label>
+        <input type="text" id="password" name="password" placeholder="Введите пароль" required>
+
+        <a href="" onclick="login()"><input type="button" id="in" onclick="login()" value="Войти"></a>
+    </form>
+</div>
+    <script >
+        function login(){
+    let usernameInput = document.getElementById('username');
+    let passwordInput = document.getElementById('password');
+    let containerDiv = document.querySelector('.container');
+    let a = document.querySelector('a');
+
+    if(usernameInput.value == 'b' && passwordInput.value == 'b'){
+        a.href = 'index1.html';
+    }else{
+        alert('Неправильное имя пользователя или пароль!');
+    }
+}
+    </script>
+</body>
+</html>
+
+
