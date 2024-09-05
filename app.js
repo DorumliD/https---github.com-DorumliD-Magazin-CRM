@@ -897,7 +897,7 @@ function mode(){
     let myInput = document.querySelector('input');
     let myH1 = document.querySelector('h1');
     if(myInput.value =='🌙'){
-        document.body.style.backgroundColor = 'black';
+        document.body.style.backgroundColor = 'rgb(10, 10, 86)';
         document.body.style.color = 'yellow';
         myInput.style.backgroundColor = 'white';
         myInput.value = '🌞';
